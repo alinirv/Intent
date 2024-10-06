@@ -17,5 +17,11 @@ class ParametroActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(apb.root)
 
+        setSupportActionBar(apb.toolbarTb)
+        supportActionBar?.apply {
+            title= getString(R.string.app_name)
+            subtitle=this@ParametroActivity.javaClass.canonicalName
+        }
+
     }
 }
