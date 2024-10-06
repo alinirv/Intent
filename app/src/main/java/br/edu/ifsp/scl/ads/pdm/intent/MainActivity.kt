@@ -17,5 +17,11 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(amb.root)
 
+        setSupportActionBar(amb.toolbarTb)
+        supportActionBar?.apply {
+            title = getString(R.string.app_name)
+            subtitle = this@MainActivity.javaClass.simpleName
+        }
+
     }
 }
